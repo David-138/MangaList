@@ -1,0 +1,15 @@
+.botonesPerfil a{
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+}
+.botonesPerfil{
+    background-color: #9DA1AD;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+}
+.botonPerfil{
+    margin-top: 20vw;
+    margin-bottom: 20vw;
+}

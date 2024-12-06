@@ -1,0 +1,16 @@
+.menuBoton img{
+    width: 90%;
+}
+.menuBoton{
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.menuMain{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+.menuMain:last-child img{
+    margin-bottom: 5%;
+}
