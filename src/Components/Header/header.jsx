@@ -140,7 +140,7 @@ function Header() {
               </div>
             ))
           ) : (
-            <p>No se encontraron resultados.</p>
+            <p className="mensajeErrorBusqueda">No se encontraron resultados.</p>
           )}
         </div>
       </div>
