@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./header.css";
 
 function Header() {
+  // eslint-disable-next-line no-unused-vars
   const [authenticated, setAuthenticated] = useState(false);
 
   useEffect(() => {
@@ -43,10 +44,9 @@ function Header() {
       setSearchResults([]);
       return;
     }
+    setLoading(true);
 
     const timeoutId = setTimeout(() => {
-      setLoading(true);
-
       fetch(`http://localhost:5000/search/manga?search=${encodeURIComponent(searchQuery)}`)
         .then((response) => {
           if (!response.ok) {
@@ -83,12 +83,9 @@ function Header() {
   return (
     <div className="header">
       <div className="headermenu">
-        <img
-          className="imgmenu"
-          src="/assets/img/menu.png"
-          alt=""
-          onClick={toggleMenu}
-        />
+    <button className="botonesDelMenu" onClick={toggleMenu}>
+        <img className="imgmenu" src="/assets/img/menu.png" alt="Menú" />
+      </button>
         <nav>
           {!token ? (
             <Link to="/login">
@@ -97,18 +94,14 @@ function Header() {
           ) : (
             <>
               <Link to="/Profile">
-                <img className="icon" src="/assets/img/icon.png" alt=""></img>
+                <img className="icon" src="/assets/img/icon.png" alt="fotoPerfil"></img>
               </Link>
             </>
           )}
         </nav>
-
-        <img
-          className="imgbuscar"
-          src="/assets/img/lupa.png"
-          alt=""
-          onClick={toggleBuscar}
-        />
+        <button className="botonesDelMenu" onClick={toggleMenu}>
+          <img className="imgbuscar" src="/assets/img/lupa.png" alt="Buscar" onClick={toggleBuscar}/>
+        </button>
       </div>
       <div className="headerlist">
         <ul className={showMenu ? "" : "hidden"}>

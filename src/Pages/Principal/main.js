@@ -8,17 +8,17 @@ function main() {
       <div className="menuMain">
         <Link to={`/MangaList`}>
           <div className="menuBoton">
-            <img src="/assets/img/listaMangas.png" alt=""></img>
+            <img src="/assets/img/listaMangas.png" alt="Lista"></img>
           </div>
         </Link>
-        <Link to={`/AdvancedSearch`}>
+        <Link to={`/Search`}>
           <div className="menuBoton">
-            <img src="/assets/img/BusquedaAvanzada.png" alt=""></img>
+            <img src="/assets/img/BusquedaAvanzada.png" alt="BusquedaAvanzada"></img>
           </div>
         </Link>
         <Link to={`/Achievements`}>
           <div className="menuBoton">
-            <img src="/assets/img/logroBoton.png" alt=""></img>
+            <img src="/assets/img/logroBoton.png" alt="Logros"></img>
           </div>
         </Link>
       </div>

@@ -24,7 +24,7 @@ function MangaDetail() {
           setDemografia(serialization[revista]);
         } else {
           setDemografia(
-            "La revista aún no está en el archivo serialization.js"
+            "El manga es autopublicado o la revista aún no está en el archivo serialization.js"
           );
         }
 
